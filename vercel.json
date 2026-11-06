@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/placa/:placa",
+      "destination": "/api/placa?placa=:placa"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.mjs"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
